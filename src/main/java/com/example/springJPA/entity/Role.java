@@ -1,4 +1,4 @@
-package com.example.prj1.entity;
+package com.example.springJPA.entity;
 
 import javax.persistence.*;
 

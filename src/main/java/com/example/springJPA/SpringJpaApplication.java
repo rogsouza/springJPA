@@ -1,13 +1,13 @@
-package com.example.prj1;
+package com.example.springJPA;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Prj1Application {
+public class SpringJpaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Prj1Application.class, args);
+		SpringApplication.run(SpringJpaApplication.class, args);
 	}
 
 }
