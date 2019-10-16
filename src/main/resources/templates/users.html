@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Spring JPA</title>
+</head>
+<body>
+	<table border=1>
+		<tr>
+			<th>Nome</th>
+			<th>Email</th>
+		</tr>
+		<th:block th:each="user : ${usersList}"> 
+			<tr> 
+				<td th:text="${user.name}"></th>
+				<td th:text="${user.email}"></th>
+			</tr>		
+		</th:block> 
+	</table>
+
+</body>
+</html>

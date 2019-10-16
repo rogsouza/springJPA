@@ -38,8 +38,10 @@ public class DataInitialize implements ApplicationListener<ContextRefreshedEvent
 			createUser("Ely Gravina", "ely.gravina@gmail.com");
 		}
 		
+		// MSQL - getOne
+		/*
 		try {
-			User user2 = userRepository.getOne(8L); /* Busca o id 3 na base - L de long */
+			User user2 = userRepository.getOne(8L); // Busca o id 3 na base - L de long 
 			System.out.println("Pesquisando user Id 8...");
 			System.out.println("Usuario pesquisado - Id [" + user2.getId() + "] - Nome [" + user2.getName() + "] - [" + user2.getEmail() + "]");
 			
@@ -68,12 +70,13 @@ public class DataInitialize implements ApplicationListener<ContextRefreshedEvent
 			userRepository.save(user2);
 	
 			System.out.println("Tentando pesquisar user Id 10...");
-			user2 = userRepository.getOne(10L); /* Busca o id 3 na base - L de long */
+			user2 = userRepository.getOne(10L); 
 			System.out.println("Usuario pesquisado - Id [" + user2.getId() + "] - Nome [" + user2.getName() + "] - [" + user2.getEmail() + "]");
 			
 		} catch (Exception e) {
 			System.out.println("Falha ao pesquisar user Id 10 - Error -> [" + e + "]");
 		}
+		*/
 		
 		try {
 			User user2 = userRepository.findByName("Jose Verdan"); 
@@ -98,7 +101,6 @@ public class DataInitialize implements ApplicationListener<ContextRefreshedEvent
 		} catch (Exception e) {
 			System.out.println("Falha ao pesquisar user pelo Nome com like - Error -> [" + e + "]");
 		}			
-		
 		
 		try {
 			User user2 = userRepository.findByEmail("radsouza@gmail.com"); 
